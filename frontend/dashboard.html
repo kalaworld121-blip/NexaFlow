@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard — NexaFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- =========================================
+         DASHBOARD HEADER
+    ========================================= -->
+
+    <header class="dashboard-header">
+
+        <a href="index.html" class="dashboard-logo">
+            ✦ NexaFlow
+        </a>
+
+        <div class="dashboard-user">
+
+            <span>
+                Welcome, <strong id="dashboardUserName">User</strong>
+            </span>
+
+            <button
+                type="button"
+                class="logout-btn"
+                id="logoutButton"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         DASHBOARD NAVIGATION
+    ========================================= -->
+
+    <nav class="dashboard-nav">
+
+        <a href="dashboard.html" class="active">
+            ⌂ Dashboard
+        </a>
+
+        <a href="#features">
+            ✦ AI Assistant
+        </a>
+
+        <a href="#documents">
+            ▣ Documents
+        </a>
+
+        <a href="#translation">
+            ⇄ Translation
+        </a>
+
+        <a href="#marketing">
+            ◈ Marketing
+        </a>
+
+        <a href="#automation">
+            ⚙ Automation
+        </a>
+
+        <a href="#analytics">
+            ◫ Analytics
+        </a>
+
+        <a href="#">
+            ⚙ Settings
+        </a>
+
+    </nav>
+
+
+    <!-- =========================================
+         DASHBOARD MAIN
+    ========================================= -->
+
+    <main class="dashboard-main">
+
+        <!-- Welcome -->
+
+        <section class="dashboard-welcome">
+
+            <div>
+
+                <div class="dashboard-label">
+                    YOUR WORKSPACE
+                </div>
+
+                <h1>
+                    Welcome back,
+                    <span id="welcomeUserName">User</span> 👋
+                </h1>
+
+                <p>
+                    Manage your AI tools, documents, workflows and
+                    analytics from one simple workspace.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="new-task-btn"
+                id="newTaskButton"
+            >
+                + New Task
+            </button>
+
+        </section>
+
+
+        <!-- =====================================
+             STATISTICS
+        ====================================== -->
+
+        <section class="dashboard-stats">
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    AI Tasks
+                </h3>
+
+                <strong>
+                    128
+                </strong>
+
+                <p class="positive">
+                    +18% this week
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Automations
+                </h3>
+
+                <strong>
+                    24
+                </strong>
+
+                <p class="positive">
+                    18 running
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    ▣
+                </div>
+
+                <h3>
+                    Documents
+                </h3>
+
+                <strong>
+                    86
+                </strong>
+
+                <p class="positive">
+                    12 processed today
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    ◫
+                </div>
+
+                <h3>
+                    Productivity
+                </h3>
+
+                <strong>
+                    94%
+                </strong>
+
+                <p class="positive">
+                    +12% improvement
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =====================================
+             QUICK ACTIONS
+        ====================================== -->
+
+        <section class="dashboard-section" id="features">
+
+            <div class="section-heading">
+
+                <h2>
+                    Quick Actions
+                </h2>
+
+                <a href="#">
+                    View all
+                </a>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <button
+                    type="button"
+                    class="action-card"
+                >
+
+                    <span>
+                        ✦
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            AI Assistant
+                        </h3>
+
+                        <p>
+                            Ask questions, generate ideas and get
+                            intelligent assistance.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="action-card"
+                    id="documents"
+                >
+
+                    <span>
+                        ▣
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            AI Documents
+                        </h3>
+
+                        <p>
+                            Analyze, summarize and work with documents.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="action-card"
+                    id="translation"
+                >
+
+                    <span>
+                        ⇄
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Translation
+                        </h3>
+
+                        <p>
+                            Translate documents and content across
+                            multiple languages.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="action-card"
+                    id="marketing"
+                >
+
+                    <span>
+                        ◈
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Marketing
+                        </h3>
+
+                        <p>
+                            Create content and manage marketing
+                            workflows.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="action-card"
+                >
+
+                    <span>
+                        💼
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Career Tools
+                        </h3>
+
+                        <p>
+                            Build CVs, analyze jobs and prepare for
+                            interviews.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="action-card"
+                    id="automation"
+                >
+
+                    <span>
+                        ⚙
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Automation
+                        </h3>
+
+                        <p>
+                            Build workflows and automate repetitive
+                            tasks.
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             RECENT ACTIVITY
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Recent Activity
+                </h2>
+
+                <a href="#">
+                    View all
+                </a>
+
+            </div>
+
+
+            <div class="activity-list">
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            AI Document Analysis
+                        </h3>
+
+                        <p>
+                            Report analyzed successfully
+                        </p>
+
+                    </div>
+
+                    <span>
+                        2 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        ⚙
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Marketing Workflow
+                        </h3>
+
+                        <p>
+                            Automation completed
+                        </p>
+
+                    </div>
+
+                    <span>
+                        15 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        ⇄
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Translation Task
+                        </h3>
+
+                        <p>
+                            Document translated to Arabic
+                        </p>
+
+                    </div>
+
+                    <span>
+                        32 min ago
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ANALYTICS
+        ====================================== -->
+
+        <section
+            class="dashboard-section"
+            id="analytics"
+        >
+
+            <div class="section-heading">
+
+                <h2>
+                    Analytics
+                </h2>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+
+                <div class="action-card">
+
+                    <span>
+                        📈
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Automation Success
+                        </h3>
+
+                        <p>
+                            96.8% success rate this month
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Tasks Completed
+                        </h3>
+
+                        <p>
+                            2,481 tasks completed this month
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Time Saved
+                        </h3>
+
+                        <p>
+                            184 hours saved through automation
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

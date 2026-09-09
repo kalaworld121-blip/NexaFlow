@@ -4,216 +4,402 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="NexaFlow — AI agents, automation and intelligent workspaces for modern teams."
+    >
+
     <title>NexaFlow — AI Work & Automation Platform</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-    <!-- ================= NAVBAR ================= -->
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
 
-    <header class="navbar">
-        <div class="logo">
-            Nexa<span>Flow</span>
-        </div>
+<header class="navbar">
 
-        <nav class="nav-links">
-            <a href="#features">AI Assistant</a>
-            <a href="#features">Documents</a>
-            <a href="#translation">Translation</a>
-            <a href="#features">Marketing</a>
-            <a href="#features">Career</a>
+    <div class="nav-container">
+
+        <a href="#" class="logo">
+            <span class="logo-mark">✦</span>
+            <span>NexaFlow</span>
+        </a>
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#agents">AI Agents</a>
+            <a href="#capabilities">Capabilities</a>
             <a href="#automation">Automation</a>
             <a href="#analytics">Analytics</a>
-        </nav>
 
-        <div class="nav-actions">
-            <select class="language-select">
-                <option>English</option>
-                <option>বাংলা</option>
-                <option>العربية</option>
-                <option>हिन्दी</option>
-                <option>Español</option>
+            <select
+                class="language-select"
+                id="languageSelect"
+                aria-label="Language"
+            >
+                <option value="en">English</option>
+                <option value="bn">বাংলা</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+                <option value="es">Español</option>
             </select>
 
-            <a href="#" class="login">Login</a>
-
-            <a href="#" class="signup">
-                Sign Up
+            <a href="login.html" class="login-btn">
+                Login
             </a>
+
+            <a href="signup.html" class="signup-btn">
+                Get Started
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <span class="status-dot"></span>
+            AI agents for modern work
         </div>
-    </header>
+
+        <h1>
+            Your work.
+            <span>Powered by intelligent agents.</span>
+        </h1>
+
+        <p>
+            NexaFlow brings AI agents, automation, documents,
+            analytics and everyday productivity into one intelligent
+            workspace.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-btn get-started"
+                type="button"
+            >
+                Build your workspace
+                <span>→</span>
+            </button>
+
+            <button
+                class="secondary-btn watch-demo"
+                type="button"
+            >
+                <span class="play-icon">▶</span>
+                See how it works
+            </button>
+
+        </div>
+
+        <div class="hero-trust">
+
+            <span>
+                <strong>✦</strong>
+                AI-powered
+            </span>
+
+            <span>
+                <strong>✓</strong>
+                No credit card
+            </span>
+
+            <span>
+                <strong>∞</strong>
+                Built to scale
+            </span>
+
+        </div>
+
+    </div>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         AI WORKSPACE VISUAL
+    ====================================================== -->
 
-    <main>
+    <div class="hero-workspace">
 
-        <section class="hero">
+        <div class="workspace-window">
 
-            <div class="hero-content">
+            <div class="workspace-topbar">
 
-                <div class="hero-badge">
-                    ✦ AI-powered productivity & automation
+                <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
-                <h1>
-                    Work Smarter.
-                    <span>Automate Everything.</span>
-                </h1>
-
-                <p class="hero-text">
-                    NexaFlow brings AI, documents, marketing, career tools,
-                    translation and automation together in one powerful platform.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#" class="primary-button">
-                        Get Started →
-                    </a>
-
-                    <a href="#dashboard" class="secondary-button">
-                        ▶ Watch Demo
-                    </a>
+                <div class="workspace-title">
+                    NexaFlow Workspace
                 </div>
 
-                <div class="hero-checks">
-                    <span>✓ No Credit Card Required</span>
-                    <span>✓ Free Plan Available</span>
-                    <span>✓ Works on All Devices</span>
+                <div class="workspace-status">
+                    <span></span>
+                    Live
                 </div>
 
             </div>
 
-        </section>
 
+            <div class="workspace-body">
 
-        <!-- ================= DASHBOARD PREVIEW ================= -->
+                <aside class="workspace-sidebar">
 
-        <section class="dashboard-section" id="dashboard">
-
-            <div class="section-heading">
-                <p class="section-label">YOUR WORKSPACE</p>
-
-                <h2>
-                    Everything you need.
-                    <span>One dashboard.</span>
-                </h2>
-
-                <p>
-                    Manage your AI tools, documents, workflows and analytics
-                    from one simple workspace.
-                </p>
-            </div>
-
-
-            <div class="dashboard-preview">
-
-                <aside class="dashboard-sidebar">
-
-                    <div class="sidebar-logo">
+                    <div class="mini-brand">
+                        <span>✦</span>
                         NexaFlow
                     </div>
 
-                    <a class="active">⌂ Dashboard</a>
-                    <a>✦ AI Assistant</a>
-                    <a>▣ Documents</a>
-                    <a>⇄ Translation</a>
-                    <a>◈ Marketing</a>
-                    <a>⚙ Automation</a>
-                    <a>◫ Analytics</a>
-
-                    <div class="sidebar-bottom">
-                        <a>⚙ Settings</a>
+                    <div class="workspace-nav-label">
+                        WORKSPACE
                     </div>
+
+                    <a href="#" class="workspace-nav active">
+                        <span>⌂</span>
+                        Overview
+                    </a>
+
+                    <a href="#agents" class="workspace-nav">
+                        <span>✦</span>
+                        AI Agents
+                    </a>
+
+                    <a href="#capabilities" class="workspace-nav">
+                        <span>▣</span>
+                        Projects
+                    </a>
+
+                    <a href="#automation" class="workspace-nav">
+                        <span>⚙</span>
+                        Automations
+                    </a>
+
+                    <a href="#analytics" class="workspace-nav">
+                        <span>◫</span>
+                        Analytics
+                    </a>
 
                 </aside>
 
 
-                <div class="dashboard-main">
+                <div class="workspace-main">
 
-                    <div class="dashboard-top">
+                    <div class="workspace-heading">
 
                         <div>
-                            <p>Welcome back 👋</p>
-                            <h3>Your Workspace</h3>
+                            <span class="eyebrow">
+                                AI COMMAND CENTER
+                            </span>
+
+                            <h3>
+                                Good morning, kala world
+                            </h3>
+
+                            <p>
+                                What would you like NexaFlow to accomplish?
+                            </p>
                         </div>
 
-                        <button>
-                            + New Task
-                        </button>
-
-                    </div>
-
-
-                    <div class="stats-grid">
-
-                        <div class="stat-card">
-                            <small>AI Tasks</small>
-                            <strong>128</strong>
-                            <span>+18% this week</span>
-                        </div>
-
-                        <div class="stat-card">
-                            <small>Automations</small>
-                            <strong>24</strong>
-                            <span>18 running</span>
-                        </div>
-
-                        <div class="stat-card">
-                            <small>Documents</small>
-                            <strong>86</strong>
-                            <span>12 processed today</span>
-                        </div>
-
-                        <div class="stat-card">
-                            <small>Productivity</small>
-                            <strong>94%</strong>
-                            <span>+12% improvement</span>
+                        <div class="workspace-avatar">
+                            KW
                         </div>
 
                     </div>
 
 
-                    <div class="activity-card">
+                    <div class="ai-command-box">
 
-                        <div class="card-header">
-                            <h3>Recent Activity</h3>
-                            <a href="#">View all</a>
+                        <div class="command-icon">
+                            ✦
                         </div>
 
-                        <div class="activity">
-                            <div class="activity-icon">✦</div>
+                        <div class="command-content">
 
-                            <div>
-                                <strong>AI Document Analysis</strong>
-                                <p>Report analyzed successfully</p>
+                            <strong>
+                                Ask NexaFlow anything...
+                            </strong>
+
+                            <span>
+                                Create, analyze, research, automate or transform your work.
+                            </span>
+
+                        </div>
+
+                        <div class="command-shortcut">
+                            ⌘ K
+                        </div>
+
+                    </div>
+
+
+                    <div class="workspace-section-heading">
+
+                        <div>
+                            <span class="eyebrow">
+                                YOUR AI TEAM
+                            </span>
+
+                            <h4>
+                                Active agents
+                            </h4>
+                        </div>
+
+                        <span class="agent-count">
+                            6 agents
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-agent-grid">
+
+                        <article class="mini-agent active-agent">
+
+                            <div class="mini-agent-icon">
+                                ✦
                             </div>
 
-                            <time>2 min ago</time>
-                        </div>
-
-                        <div class="activity">
-                            <div class="activity-icon">⚙</div>
-
                             <div>
-                                <strong>Marketing Workflow</strong>
-                                <p>Automation completed</p>
+                                <strong>Research Agent</strong>
+                                <span>
+                                    Analyzing 14 sources
+                                </span>
                             </div>
 
-                            <time>15 min ago</time>
-                        </div>
+                            <i></i>
 
-                        <div class="activity">
-                            <div class="activity-icon">⇄</div>
+                        </article>
 
-                            <div>
-                                <strong>Translation Task</strong>
-                                <p>Document translated to Arabic</p>
+
+                        <article class="mini-agent">
+
+                            <div class="mini-agent-icon">
+                                ◈
                             </div>
 
-                            <time>32 min ago</time>
+                            <div>
+                                <strong>Marketing Agent</strong>
+                                <span>
+                                    Ready for a task
+                                </span>
+                            </div>
+
+                            <i></i>
+
+                        </article>
+
+
+                        <article class="mini-agent">
+
+                            <div class="mini-agent-icon">
+                                ▣
+                            </div>
+
+                            <div>
+                                <strong>Document Agent</strong>
+                                <span>
+                                    3 files processed
+                                </span>
+                            </div>
+
+                            <i></i>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="workspace-bottom-grid">
+
+                        <div class="workspace-card">
+
+                            <div class="workspace-card-header">
+                                <span>Recent activity</span>
+                                <span>•••</span>
+                            </div>
+
+                            <div class="workspace-activity">
+
+                                <span>✦</span>
+
+                                <div>
+                                    <strong>
+                                        Market research completed
+                                    </strong>
+                                    <small>
+                                        Research Agent · 2 min ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <div class="workspace-activity">
+
+                                <span>⚙</span>
+
+                                <div>
+                                    <strong>
+                                        Weekly report automated
+                                    </strong>
+                                    <small>
+                                        Automation · 18 min ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="workspace-card insight-card">
+
+                            <div class="workspace-card-header">
+                                <span>AI insight</span>
+                                <span>✦</span>
+                            </div>
+
+                            <strong>
+                                18.4 hrs
+                            </strong>
+
+                            <small>
+                                estimated time saved this week
+                            </small>
+
+                            <div class="insight-line">
+                                <span></span>
+                            </div>
+
                         </div>
 
                     </div>
@@ -222,364 +408,732 @@
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
 
 
-        <!-- ================= FEATURES ================= -->
+<!-- =========================================================
+     AGENTS
+========================================================= -->
 
-        <section class="features-section" id="features">
+<section class="agents-section" id="agents">
 
-            <div class="section-heading">
+    <div class="section-heading-centered">
 
-                <p class="section-label">POWERFUL FEATURES</p>
+        <span class="section-label">
+            INTELLIGENT AGENTS
+        </span>
 
-                <h2>
-                    One platform.
-                    <span>Infinite possibilities.</span>
-                </h2>
+        <h2>
+            A team of AI agents.
+            <span>Always ready.</span>
+        </h2>
 
-                <p>
-                    Powerful AI tools designed to help you create,
-                    automate, manage and grow.
-                </p>
+        <p>
+            Give NexaFlow a goal and let specialized agents
+            research, write, analyze, translate and automate the work.
+        </p>
 
+    </div>
+
+
+    <div class="agent-grid">
+
+        <article class="agent-card featured-agent">
+
+            <div class="agent-card-top">
+                <div class="agent-icon">✦</div>
+
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
             </div>
 
+            <h3>AI Assistant</h3>
 
-            <div class="features-grid">
+            <p>
+                Think, write, plan and solve complex tasks
+                with an intelligent general-purpose agent.
+            </p>
 
-                <div class="feature-card">
-                    <div class="feature-icon">✦</div>
-                    <h3>AI Assistant</h3>
-                    <p>
-                        Get intelligent help with research, writing,
-                        analysis and everyday tasks.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">▣</div>
-                    <h3>Documents</h3>
-                    <p>
-                        Upload, analyze, summarize and work with
-                        your documents using AI.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">◈</div>
-                    <h3>Marketing</h3>
-                    <p>
-                        Create content, optimize SEO and plan
-                        powerful marketing campaigns.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">⚙</div>
-                    <h3>Automation</h3>
-                    <p>
-                        Turn repetitive work into automated
-                        workflows and scheduled tasks.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">◉</div>
-                    <h3>Career</h3>
-                    <p>
-                        Build CVs, analyze jobs and prepare
-                        for interviews with AI.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">◫</div>
-                    <h3>Analytics</h3>
-                    <p>
-                        Track productivity, workflows,
-                        campaigns and business performance.
-                    </p>
-                    <a href="#">Explore →</a>
-                </div>
-
+            <div class="agent-tags">
+                <span>Reasoning</span>
+                <span>Writing</span>
+                <span>Planning</span>
             </div>
 
-        </section>
+            <button
+                class="explore-button"
+                data-feature="AI Assistant"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
 
 
-        <!-- ================= AUTOMATION ================= -->
+        <article class="agent-card">
 
-        <section class="automation-section" id="automation">
+            <div class="agent-card-top">
+                <div class="agent-icon">⌕</div>
 
-            <div class="automation-content">
-
-                <p class="section-label">AI AUTOMATION</p>
-
-                <h2>
-                    Stop repeating.
-                    <span>Start automating.</span>
-                </h2>
-
-                <p>
-                    Build workflows that connect AI, data, documents,
-                    marketing and your everyday tasks.
-                </p>
-
-                <div class="automation-list">
-
-                    <div>
-                        <span>✓</span>
-                        Scheduled AI Tasks
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Data Processing
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Email Automation
-                    </div>
-
-                    <div>
-                        <span>✓</span>
-                        Reports & Analytics
-                    </div>
-
-                </div>
-
-                <a href="#" class="primary-button">
-                    Create Workflow →
-                </a>
-
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
             </div>
 
+            <h3>Research Agent</h3>
 
-            <div class="workflow-box">
+            <p>
+                Research topics, compare information and
+                turn scattered sources into useful insights.
+            </p>
 
-                <div class="workflow-header">
-                    <strong>Workflow Builder</strong>
-                    <span class="status">● Active</span>
-                </div>
-
-                <div class="workflow-step">
-                    <b>1</b>
-                    <div>
-                        <strong>Trigger</strong>
-                        <p>Every Monday at 9:00 AM</p>
-                    </div>
-                </div>
-
-                <div class="workflow-line"></div>
-
-                <div class="workflow-step">
-                    <b>2</b>
-                    <div>
-                        <strong>AI Processing</strong>
-                        <p>Analyze weekly data</p>
-                    </div>
-                </div>
-
-                <div class="workflow-line"></div>
-
-                <div class="workflow-step">
-                    <b>3</b>
-                    <div>
-                        <strong>Generate Report</strong>
-                        <p>Create & send report</p>
-                    </div>
-                </div>
-
+            <div class="agent-tags">
+                <span>Research</span>
+                <span>Analysis</span>
             </div>
 
-        </section>
+            <button
+                class="explore-button"
+                data-feature="Research Agent"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
 
 
-        <!-- ================= TRANSLATION ================= -->
+        <article class="agent-card">
 
-        <section class="translation-section" id="translation">
+            <div class="agent-card-top">
+                <div class="agent-icon">▣</div>
 
-            <div class="section-heading">
-
-                <p class="section-label">GLOBAL WORKSPACE</p>
-
-                <h2>
-                    Work in your
-                    <span>language.</span>
-                </h2>
-
-                <p>
-                    NexaFlow is designed for a global audience with
-                    multilingual AI and translation capabilities.
-                </p>
-
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
             </div>
 
-            <div class="language-cards">
+            <h3>Document Agent</h3>
 
-                <div>🇬🇧 English</div>
-                <div>🇧🇩 বাংলা</div>
-                <div>🇸🇦 العربية</div>
-                <div>🇮🇳 हिन्दी</div>
-                <div>🇪🇸 Español</div>
-                <div>🇫🇷 Français</div>
+            <p>
+                Summarize, analyze and extract information
+                from documents in seconds.
+            </p>
 
+            <div class="agent-tags">
+                <span>PDF</span>
+                <span>Analysis</span>
             </div>
 
-        </section>
+            <button
+                class="explore-button"
+                data-feature="Document Agent"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
 
 
-        <!-- ================= ANALYTICS ================= -->
+        <article class="agent-card">
 
-        <section class="analytics-section" id="analytics">
+            <div class="agent-card-top">
+                <div class="agent-icon">◈</div>
 
-            <div class="analytics-content">
-
-                <p class="section-label">SMART ANALYTICS</p>
-
-                <h2>
-                    Understand your work.
-                    <span>Improve your results.</span>
-                </h2>
-
-                <p>
-                    Track your AI usage, automation performance,
-                    productivity and marketing results.
-                </p>
-
-                <a href="#" class="primary-button">
-                    View Analytics →
-                </a>
-
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
             </div>
 
+            <h3>Marketing Agent</h3>
 
-            <div class="chart-card">
+            <p>
+                Generate campaigns, content, SEO ideas and
+                marketing workflows from one workspace.
+            </p>
 
-                <div class="chart-header">
-                    <div>
-                        <small>Productivity</small>
-                        <h3>94%</h3>
-                    </div>
-
-                    <span>+12.5%</span>
-                </div>
-
-                <div class="chart">
-
-                    <div class="bar" style="height: 35%"></div>
-                    <div class="bar" style="height: 48%"></div>
-                    <div class="bar" style="height: 42%"></div>
-                    <div class="bar" style="height: 65%"></div>
-                    <div class="bar" style="height: 58%"></div>
-                    <div class="bar" style="height: 78%"></div>
-                    <div class="bar" style="height: 92%"></div>
-
-                </div>
-
-                <div class="chart-days">
-                    <span>Mon</span>
-                    <span>Tue</span>
-                    <span>Wed</span>
-                    <span>Thu</span>
-                    <span>Fri</span>
-                    <span>Sat</span>
-                    <span>Sun</span>
-                </div>
-
+            <div class="agent-tags">
+                <span>Content</span>
+                <span>SEO</span>
             </div>
 
-        </section>
+            <button
+                class="explore-button"
+                data-feature="Marketing Agent"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
 
 
-        <!-- ================= CTA ================= -->
+        <article class="agent-card">
 
-        <section class="cta-section">
+            <div class="agent-card-top">
+                <div class="agent-icon">⇄</div>
 
-            <p class="section-label">GET STARTED TODAY</p>
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
+            </div>
+
+            <h3>Translation Agent</h3>
+
+            <p>
+                Translate content while preserving context,
+                meaning and tone across languages.
+            </p>
+
+            <div class="agent-tags">
+                <span>Languages</span>
+                <span>Documents</span>
+            </div>
+
+            <button
+                class="explore-button"
+                data-feature="Translation Agent"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
+
+
+        <article class="agent-card">
+
+            <div class="agent-card-top">
+                <div class="agent-icon">⚙</div>
+
+                <span class="agent-live">
+                    <i></i>
+                    Ready
+                </span>
+            </div>
+
+            <h3>Automation Agent</h3>
+
+            <p>
+                Connect tools, trigger workflows and remove
+                repetitive work from your daily routine.
+            </p>
+
+            <div class="agent-tags">
+                <span>Workflows</span>
+                <span>Triggers</span>
+            </div>
+
+            <button
+                class="explore-button"
+                data-feature="Automation Agent"
+                type="button"
+            >
+                Explore agent →
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CAPABILITIES
+========================================================= -->
+
+<section class="capabilities-section" id="capabilities">
+
+    <div class="capabilities-copy">
+
+        <span class="section-label">
+            ONE INTELLIGENT WORKSPACE
+        </span>
+
+        <h2>
+            Everything connected.
+            <span>Nothing scattered.</span>
+        </h2>
+
+        <p>
+            Stop jumping between disconnected tools. NexaFlow
+            gives your AI agents access to the context, documents,
+            workflows and information they need to get work done.
+        </p>
+
+        <div class="capability-list">
+
+            <div>
+                <span>✓</span>
+                AI-powered document intelligence
+            </div>
+
+            <div>
+                <span>✓</span>
+                Multi-language translation
+            </div>
+
+            <div>
+                <span>✓</span>
+                Marketing and career workflows
+            </div>
+
+            <div>
+                <span>✓</span>
+                Intelligent task automation
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="capability-visual">
+
+        <div class="connection-line line-one"></div>
+        <div class="connection-line line-two"></div>
+        <div class="connection-line line-three"></div>
+
+        <div class="capability-center">
+
+            <span>✦</span>
+
+            <strong>
+                NexaFlow
+            </strong>
+
+            <small>
+                AI Workspace
+            </small>
+
+        </div>
+
+        <div class="capability-node node-one">
+            <span>▣</span>
+            Documents
+        </div>
+
+        <div class="capability-node node-two">
+            <span>◈</span>
+            Marketing
+        </div>
+
+        <div class="capability-node node-three">
+            <span>⇄</span>
+            Translation
+        </div>
+
+        <div class="capability-node node-four">
+            <span>⚙</span>
+            Automation
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AUTOMATION
+========================================================= -->
+
+<section class="automation-section" id="automation">
+
+    <div class="section-heading-centered">
+
+        <span class="section-label">
+            AGENT AUTOMATION
+        </span>
+
+        <h2>
+            Turn a goal into
+            <span>an automated workflow.</span>
+        </h2>
+
+        <p>
+            Tell NexaFlow what needs to happen. Connect your
+            agents and let the workflow handle the repetitive work.
+        </p>
+
+    </div>
+
+
+    <div class="automation-builder">
+
+        <div class="automation-node">
+
+            <span class="node-number">
+                01
+            </span>
+
+            <div class="automation-node-icon">
+                ⚡
+            </div>
+
+            <div>
+                <small>TRIGGER</small>
+                <strong>New project created</strong>
+            </div>
+
+        </div>
+
+
+        <div class="automation-connector">
+            <span>→</span>
+        </div>
+
+
+        <div class="automation-node automation-node-active">
+
+            <span class="node-number">
+                02
+            </span>
+
+            <div class="automation-node-icon">
+                ✦
+            </div>
+
+            <div>
+                <small>AI AGENT</small>
+                <strong>Research & analyze</strong>
+            </div>
+
+        </div>
+
+
+        <div class="automation-connector">
+            <span>→</span>
+        </div>
+
+
+        <div class="automation-node">
+
+            <span class="node-number">
+                03
+            </span>
+
+            <div class="automation-node-icon">
+                ✓
+            </div>
+
+            <div>
+                <small>ACTION</small>
+                <strong>Generate report</strong>
+            </div>
+
+        </div>
+
+
+        <div class="automation-connector">
+            <span>→</span>
+        </div>
+
+
+        <div class="automation-node">
+
+            <span class="node-number">
+                04
+            </span>
+
+            <div class="automation-node-icon">
+                ◫
+            </div>
+
+            <div>
+                <small>RESULT</small>
+                <strong>Deliver to workspace</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="primary-btn explore-button"
+        data-feature="AI Automation"
+        type="button"
+    >
+        Explore automation
+        <span>→</span>
+    </button>
+
+</section>
+
+
+<!-- =========================================================
+     ANALYTICS
+========================================================= -->
+
+<section class="analytics-section" id="analytics">
+
+    <div class="analytics-header">
+
+        <div>
+
+            <span class="section-label">
+                INTELLIGENT ANALYTICS
+            </span>
 
             <h2>
-                Build your smarter
-                <span>workflow.</span>
+                See where your
+                <span>time goes.</span>
             </h2>
 
             <p>
-                Create. Automate. Track. Analyze.
-                Everything starts with NexaFlow.
+                Understand your AI usage, completed work,
+                automation performance and productivity gains.
             </p>
 
-            <a href="#" class="primary-button">
-                Start Free →
-            </a>
+        </div>
 
-        </section>
+        <div class="analytics-period">
+            Last 30 days ▾
+        </div>
 
-    </main>
+    </div>
 
 
-    <!-- ================= FOOTER ================= -->
+    <div class="analytics-dashboard">
 
-    <footer class="footer">
+        <div class="analytics-main-card">
+
+            <div class="analytics-card-header">
+
+                <div>
+                    <small>PRODUCTIVITY SCORE</small>
+                    <strong>94.8%</strong>
+                </div>
+
+                <span class="analytics-positive">
+                    +12.4%
+                </span>
+
+            </div>
+
+
+            <div class="analytics-chart">
+
+                <div class="chart-grid">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <svg
+                    viewBox="0 0 600 190"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M0 155 C60 145 70 128 120 138 S190 105 235 120 S300 70 345 94 S410 75 455 82 S520 38 600 52"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+
+            <div class="chart-labels">
+                <span>Week 1</span>
+                <span>Week 2</span>
+                <span>Week 3</span>
+                <span>Week 4</span>
+            </div>
+
+        </div>
+
+
+        <div class="analytics-side">
+
+            <div class="metric-card">
+
+                <span>AI Tasks</span>
+
+                <strong>2,481</strong>
+
+                <small>
+                    +24% this month
+                </small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Time Saved</span>
+
+                <strong>184 hrs</strong>
+
+                <small>
+                    Through automation
+                </small>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>Automation Success</span>
+
+                <strong>96.8%</strong>
+
+                <small>
+                    +8.4% this month
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta-section">
+
+    <div class="cta-glow"></div>
+
+    <span class="section-label">
+        READY WHEN YOU ARE
+    </span>
+
+    <h2>
+        Give your work
+        <span>an intelligent upgrade.</span>
+    </h2>
+
+    <p>
+        Build your AI workspace, activate your agents and
+        start automating the work that slows you down.
+    </p>
+
+    <div class="hero-buttons">
+
+        <button
+            class="primary-btn get-started"
+            type="button"
+        >
+            Create your workspace
+            <span>→</span>
+        </button>
+
+        <button
+            class="secondary-btn watch-demo"
+            type="button"
+        >
+            See NexaFlow in action
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
 
         <div class="footer-brand">
 
-            <div class="logo">
-                Nexa<span>Flow</span>
-            </div>
+            <a href="#" class="logo">
+                <span class="logo-mark">✦</span>
+                <span>NexaFlow</span>
+            </a>
 
             <p>
-                AI Work & Automation Platform
+                AI workspaces, intelligent agents and
+                automation for modern teams.
             </p>
 
         </div>
 
 
-        <div class="footer-links">
+        <div class="footer-column">
 
-            <div>
-                <h4>Platform</h4>
-                <a href="#">AI Assistant</a>
-                <a href="#">Documents</a>
-                <a href="#">Marketing</a>
-                <a href="#">Automation</a>
-            </div>
+            <h4>Platform</h4>
 
-            <div>
-                <h4>Resources</h4>
-                <a href="#">Career</a>
-                <a href="#">Analytics</a>
-                <a href="#">Help Center</a>
-                <a href="#">API</a>
-            </div>
-
-            <div>
-                <h4>Company</h4>
-                <a href="#">About</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact</a>
-            </div>
+            <a href="#agents">AI Agents</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#automation">Automation</a>
+            <a href="#analytics">Analytics</a>
 
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 NexaFlow. All rights reserved.</p>
-            <p>Create → Automate → Track → Analyze</p>
+
+        <div class="footer-column">
+
+            <h4>Product</h4>
+
+            <a href="login.html">Login</a>
+            <a href="signup.html">Create Account</a>
+            <a href="#agents">AI Assistant</a>
+            <a href="#automation">Workflows</a>
+
         </div>
 
-    </footer>
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#capabilities">Documents</a>
+            <a href="#capabilities">Translation</a>
+            <a href="#capabilities">Marketing</a>
+            <a href="#capabilities">Career Tools</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © 2026 NexaFlow. All rights reserved.
+        </span>
+
+        <span>
+            Create · Automate · Track · Analyze
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
